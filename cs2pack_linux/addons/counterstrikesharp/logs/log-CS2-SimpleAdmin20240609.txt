@@ -1,0 +1,1 @@
+2024-06-09 00:59:46.206 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Plugin is up to date

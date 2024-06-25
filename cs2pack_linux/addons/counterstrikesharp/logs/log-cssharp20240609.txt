@@ -1,0 +1,27 @@
+2024-06-09 00:59:44.598 +00:00 [INFO] (cssharp:Core) CounterStrikeSharp is starting up...
+2024-06-09 00:59:44.774 +00:00 [INFO] (cssharp:CoreConfig) Successfully loaded core configuration
+2024-06-09 00:59:44.789 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 36 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\gamedata.json
+2024-06-09 00:59:44.796 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 3 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\ZombieSharp.json
+2024-06-09 00:59:44.798 +00:00 [INFO] (cssharp:Core) Loading Admins from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admins.json
+2024-06-09 00:59:44.802 +00:00 [WARN] (cssharp:AdminManager) Admin data file not found. Skipping admin data load.
+2024-06-09 00:59:44.808 +00:00 [INFO] (cssharp:Core) Loading Admin Groups from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_groups.json
+2024-06-09 00:59:44.813 +00:00 [INFO] (cssharp:Core) Loading Admin Command Overrides from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_overrides.json
+2024-06-09 00:59:45.442 +00:00 [INFO] (cssharp:PluginContext) Loading plugin CS2-SimpleAdmin
+2024-06-09 00:59:45.977 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin CS2-SimpleAdmin (RELEASE)
+2024-06-09 00:59:46.846 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store
+2024-06-09 00:59:46.887 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store
+2024-06-09 00:59:47.235 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-roulette
+2024-06-09 00:59:47.246 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin [Store Module] Roulette
+2024-06-09 00:59:47.335 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-testmodule
+2024-06-09 00:59:47.342 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store Module [Test]
+2024-06-09 00:59:47.443 +00:00 [INFO] (cssharp:PluginContext) Loading plugin WASDMenuAPI
+2024-06-09 00:59:47.448 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin WASDMenuAPI
+2024-06-09 00:59:47.792 +00:00 [INFO] (cssharp:PluginContext) Loading plugin ZombieSharp
+2024-06-09 00:59:47.818 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\ZombieSharp\ZombieSharp.dll
+System.ArgumentException: Method CEntityIdentity_SetEntityName not found in gamedata.json
+   at CounterStrikeSharp.API.Core.GameData.GetSignature(String key) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/GameData.cs:line 94
+   at ZombieSharp.ZombieSharp.VirtualFunctionsInitialize() in C:\Github\cs2-ZombieMod\ZombieSharp\VirtualFunctions.cs:line 35
+   at ZombieSharp.ZombieSharp.Load(Boolean HotReload) in C:\Github\cs2-ZombieMod\ZombieSharp\ZombieSharp.cs:line 45
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 218
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93

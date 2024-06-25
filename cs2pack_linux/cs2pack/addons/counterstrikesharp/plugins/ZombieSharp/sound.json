@@ -1,0 +1,36 @@
+{
+    "GlobalSoundData":{
+        "ZombieHurt_Male": "zombie.pain",
+        "ZombieHurt_Female": "zombie.pain",
+        "ZombieHurt_Nemesis": "boss.pain",
+        "ZombieDeath_Male": "zombie.death3",
+        "ZombieDeath_Female": "zombie.death2",
+        "ZombieDeath_Nemesis": "zombie.death",
+        "ZombieInfect_Male": "human.infect",
+        "ZombieInfect_Female": "human.infect",
+        "Round_HumanWinMusic": "sounds/effect/Human_Win.vsnd",
+        "Round_ZombieWinMusic": "sounds/effect/Zombie_Win1.vsnd",
+        "RoundCountMusic": "sounds/music/zombiestart_01.vsnd",
+        "RoundCountMusic_TriggerTime": 20,
+        "RoundStartMusic": "sounds/effect/ResidentEvil_Startup.vsnd",
+        "RoundMusic_MotherMod": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_MotherMod": 107.0,
+        "RoundStartMusic_MotherMod": "sounds/effect/ResidentEvil_Startup.vsnd",
+        "RoundMusic_MultipleInfection": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_MultipleInfection": 107.0,
+        "RoundStartMusic_MultipleInfection": "sounds/effect/Survivor_startup.vsnd",
+        "RoundMusic_GodOfVengeance": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_GodOfVengeance": 107.0,
+        "RoundStartMusic_GodOfVengeance": "sounds/effect/Startup.vsnd",
+        "RoundMusic_Survivor": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_Survivor": 107.0,
+        "RoundStartMusic_Survivor": "sounds/effect/Survivor_startup.vsnd",
+        "RoundMusic_BattleMode": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_BattleMode": 107.0,
+        "RoundStartMusic_BattleMode": "sounds/effect/Survivor_startup.vsnd",
+        "RoundMusic_LegionMode": "sounds/music/gnvsleader_6457.vsnd",
+        "Timer_LegionMode": 107.0,
+        "RoundStartMusic_LegionMode": "sounds/effect/Survivor_startup.vsnd"
+      }
+      
+}

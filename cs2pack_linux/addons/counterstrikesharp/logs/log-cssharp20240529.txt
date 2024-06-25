@@ -1,0 +1,486 @@
+2024-05-29 06:19:08.043 +00:00 [INFO] (cssharp:Core) CounterStrikeSharp is starting up...
+2024-05-29 06:19:08.258 +00:00 [INFO] (cssharp:CoreConfig) Successfully loaded core configuration
+2024-05-29 06:19:08.274 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 36 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\gamedata.json
+2024-05-29 06:19:08.280 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 3 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\ZombieSharp.json
+2024-05-29 06:19:08.289 +00:00 [INFO] (cssharp:Core) Loading Admins from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admins.json
+2024-05-29 06:19:08.293 +00:00 [WARN] (cssharp:AdminManager) Admin data file not found. Skipping admin data load.
+2024-05-29 06:19:08.294 +00:00 [INFO] (cssharp:Core) Loading Admin Groups from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_groups.json
+2024-05-29 06:19:08.302 +00:00 [INFO] (cssharp:Core) Loading Admin Command Overrides from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_overrides.json
+2024-05-29 06:19:08.799 +00:00 [INFO] (cssharp:PluginContext) Loading plugin CS2-SimpleAdmin
+2024-05-29 06:19:08.921 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\CS2-SimpleAdmin\CS2-SimpleAdmin.dll
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: [CS2-SimpleAdmin] You need to setup Database credentials in config!
+   at CS2_SimpleAdmin.CS2_SimpleAdmin.OnConfigParsed(CS2_SimpleAdminConfig config) in /home/runner/work/CS2-SimpleAdmin/CS2-SimpleAdmin/CS2-SimpleAdmin.cs:line 76
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CounterStrikeSharp.API.Core.BasePlugin.InitializeConfig(Object instance, Type pluginType) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/BasePlugin.cs:line 392
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 217
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:19:09.376 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store
+2024-05-29 06:19:09.410 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\cs2-store\cs2-store.dll
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: You need to setup Database credentials in config.
+   at Store.Store.OnConfigParsed(StoreConfig config) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store\src\cs2-store.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CounterStrikeSharp.API.Core.BasePlugin.InitializeConfig(Object instance, Type pluginType) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/BasePlugin.cs:line 392
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 217
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:19:09.640 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-roulette
+2024-05-29 06:19:09.663 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin [Store Module] Roulette
+2024-05-29 06:19:09.722 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-testmodule
+2024-05-29 06:19:09.727 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store Module [Test]
+2024-05-29 06:19:09.778 +00:00 [INFO] (cssharp:PluginContext) Loading plugin WASDMenuAPI
+2024-05-29 06:19:09.787 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin WASDMenuAPI
+2024-05-29 06:19:09.868 +00:00 [INFO] (cssharp:PluginContext) Loading plugin ZombieSharp
+2024-05-29 06:19:09.913 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\ZombieSharp\ZombieSharp.dll
+System.ArgumentException: Method CEntityIdentity_SetEntityName not found in gamedata.json
+   at CounterStrikeSharp.API.Core.GameData.GetSignature(String key) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/GameData.cs:line 94
+   at ZombieSharp.ZombieSharp.VirtualFunctionsInitialize() in C:\Github\cs2-ZombieMod\ZombieSharp\VirtualFunctions.cs:line 35
+   at ZombieSharp.ZombieSharp.Load(Boolean HotReload) in C:\Github\cs2-ZombieMod\ZombieSharp\ZombieSharp.cs:line 45
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 218
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:19:09.940 +00:00 [EROR] (cssharp:PluginManager) OnAllPluginsLoaded failed
+System.Collections.Generic.KeyNotFoundException: The given key 'store:api' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at CounterStrikeSharp.API.Core.Capabilities.PluginCapability`1.Get() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Capabilities/PluginCapability.cs:line 17
+   at Store_Roulette.Store_Roulette.OnAllPluginsLoaded(Boolean hotReload) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 62
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 106
+2024-05-29 06:19:09.960 +00:00 [EROR] (cssharp:PluginManager) OnAllPluginsLoaded failed
+System.Collections.Generic.KeyNotFoundException: The given key 'store:api' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at CounterStrikeSharp.API.Core.Capabilities.PluginCapability`1.Get() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Capabilities/PluginCapability.cs:line 17
+   at Store_TestModule.Store_TestModule.OnAllPluginsLoaded(Boolean hotReload) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_TestModule\cs2-store-testmodule.cs:line 15
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 106
+2024-05-29 06:28:18.068 +00:00 [INFO] (cssharp:Core) CounterStrikeSharp is starting up...
+2024-05-29 06:28:18.233 +00:00 [INFO] (cssharp:CoreConfig) Successfully loaded core configuration
+2024-05-29 06:28:18.248 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 36 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\gamedata.json
+2024-05-29 06:28:18.260 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 3 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\ZombieSharp.json
+2024-05-29 06:28:18.263 +00:00 [INFO] (cssharp:Core) Loading Admins from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admins.json
+2024-05-29 06:28:18.265 +00:00 [WARN] (cssharp:AdminManager) Admin data file not found. Skipping admin data load.
+2024-05-29 06:28:18.267 +00:00 [INFO] (cssharp:Core) Loading Admin Groups from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_groups.json
+2024-05-29 06:28:18.276 +00:00 [INFO] (cssharp:Core) Loading Admin Command Overrides from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_overrides.json
+2024-05-29 06:28:18.802 +00:00 [INFO] (cssharp:PluginContext) Loading plugin CS2-SimpleAdmin
+2024-05-29 06:28:19.276 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin CS2-SimpleAdmin (RELEASE)
+2024-05-29 06:28:19.722 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store
+2024-05-29 06:28:19.745 +00:00 [EROR] (cssharp:ConfigManager) Failed to parse configuration file for cs2-store
+System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.database.name | LineNumber: 9 | BytePositionInLine: 2.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 2.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenUntilAfterAllCommentsAreSkipped(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CounterStrikeSharp.API.Modules.Config.ConfigManager.Load[T](String pluginName) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Modules/Config/ConfigManager.cs:line 86
+2024-05-29 06:28:19.797 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\cs2-store\cs2-store.dll
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: You need to setup Database credentials in config.
+   at Store.Store.OnConfigParsed(StoreConfig config) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store\src\cs2-store.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CounterStrikeSharp.API.Core.BasePlugin.InitializeConfig(Object instance, Type pluginType) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/BasePlugin.cs:line 392
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 217
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:28:20.014 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-roulette
+2024-05-29 06:28:20.032 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin [Store Module] Roulette
+2024-05-29 06:28:20.072 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-testmodule
+2024-05-29 06:28:20.077 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store Module [Test]
+2024-05-29 06:28:20.134 +00:00 [INFO] (cssharp:PluginContext) Loading plugin WASDMenuAPI
+2024-05-29 06:28:20.142 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin WASDMenuAPI
+2024-05-29 06:28:20.246 +00:00 [INFO] (cssharp:PluginContext) Loading plugin ZombieSharp
+2024-05-29 06:28:20.281 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\ZombieSharp\ZombieSharp.dll
+System.ArgumentException: Method CEntityIdentity_SetEntityName not found in gamedata.json
+   at CounterStrikeSharp.API.Core.GameData.GetSignature(String key) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/GameData.cs:line 94
+   at ZombieSharp.ZombieSharp.VirtualFunctionsInitialize() in C:\Github\cs2-ZombieMod\ZombieSharp\VirtualFunctions.cs:line 35
+   at ZombieSharp.ZombieSharp.Load(Boolean HotReload) in C:\Github\cs2-ZombieMod\ZombieSharp\ZombieSharp.cs:line 45
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 218
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:28:20.302 +00:00 [EROR] (cssharp:PluginManager) OnAllPluginsLoaded failed
+System.Collections.Generic.KeyNotFoundException: The given key 'store:api' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at CounterStrikeSharp.API.Core.Capabilities.PluginCapability`1.Get() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Capabilities/PluginCapability.cs:line 17
+   at Store_Roulette.Store_Roulette.OnAllPluginsLoaded(Boolean hotReload) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 62
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 106
+2024-05-29 06:28:20.322 +00:00 [EROR] (cssharp:PluginManager) OnAllPluginsLoaded failed
+System.Collections.Generic.KeyNotFoundException: The given key 'store:api' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at CounterStrikeSharp.API.Core.Capabilities.PluginCapability`1.Get() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Capabilities/PluginCapability.cs:line 17
+   at Store_TestModule.Store_TestModule.OnAllPluginsLoaded(Boolean hotReload) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_TestModule\cs2-store-testmodule.cs:line 15
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 106
+2024-05-29 06:30:37.047 +00:00 [INFO] (cssharp:AdminManager) Loaded admin data with 0 admins.
+2024-05-29 06:30:45.964 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:30:57.645 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: StoreApi could not be located.
+   at Store_Roulette.Store_Roulette.GiveCreditsToWinner(Color color) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 235
+   at Store_Roulette.Store_Roulette.OnRoundEnd(EventRoundEnd event, GameEventInfo info) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 217
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:30:57.985 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: StoreApi could not be located.
+   at Store_Roulette.Store_Roulette.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 195
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:30:58.017 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:31:32.010 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: StoreApi could not be located.
+   at Store_Roulette.Store_Roulette.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 195
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:31:32.027 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:32:15.928 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: StoreApi could not be located.
+   at Store_Roulette.Store_Roulette.GiveCreditsToWinner(Color color) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 235
+   at Store_Roulette.Store_Roulette.OnRoundEnd(EventRoundEnd event, GameEventInfo info) in C:\Users\Acer\Desktop\Mert\cs2-store-main\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 217
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:35:23.134 +00:00 [INFO] (cssharp:Core) CounterStrikeSharp is starting up...
+2024-05-29 06:35:23.533 +00:00 [INFO] (cssharp:CoreConfig) Successfully loaded core configuration
+2024-05-29 06:35:23.555 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 36 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\gamedata.json
+2024-05-29 06:35:23.575 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 3 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\ZombieSharp.json
+2024-05-29 06:35:23.586 +00:00 [INFO] (cssharp:Core) Loading Admins from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admins.json
+2024-05-29 06:35:23.589 +00:00 [WARN] (cssharp:AdminManager) Admin data file not found. Skipping admin data load.
+2024-05-29 06:35:23.590 +00:00 [INFO] (cssharp:Core) Loading Admin Groups from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_groups.json
+2024-05-29 06:35:23.595 +00:00 [INFO] (cssharp:Core) Loading Admin Command Overrides from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_overrides.json
+2024-05-29 06:35:28.766 +00:00 [INFO] (cssharp:PluginContext) Loading plugin CS2-SimpleAdmin
+2024-05-29 06:35:29.481 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin CS2-SimpleAdmin (RELEASE)
+2024-05-29 06:35:31.098 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store
+2024-05-29 06:35:31.131 +00:00 [EROR] (cssharp:ConfigManager) Failed to parse configuration file for cs2-store
+System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.database.name | LineNumber: 9 | BytePositionInLine: 2.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 2.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenUntilAfterAllCommentsAreSkipped(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CounterStrikeSharp.API.Modules.Config.ConfigManager.Load[T](String pluginName) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Modules/Config/ConfigManager.cs:line 86
+2024-05-29 06:35:31.201 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\cs2-store\cs2-store.dll
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: You need to setup Database credentials in config.
+   at Store.Store.OnConfigParsed(StoreConfig config) in C:\Github\cs2-store\Store\src\cs2-store.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CounterStrikeSharp.API.Core.BasePlugin.InitializeConfig(Object instance, Type pluginType) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/BasePlugin.cs:line 392
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 217
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:35:31.599 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-roulette
+2024-05-29 06:35:31.622 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin [Store Module] Roulette
+2024-05-29 06:36:43.890 +00:00 [INFO] (cssharp:Core) CounterStrikeSharp is starting up...
+2024-05-29 06:36:44.062 +00:00 [INFO] (cssharp:CoreConfig) Successfully loaded core configuration
+2024-05-29 06:36:44.078 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 36 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\gamedata.json
+2024-05-29 06:36:44.087 +00:00 [INFO] (cssharp:GameDataProvider) Successfully loaded 3 game data entries from C:\cs2\game\csgo\addons\counterstrikesharp\gamedata\ZombieSharp.json
+2024-05-29 06:36:44.090 +00:00 [INFO] (cssharp:Core) Loading Admins from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admins.json
+2024-05-29 06:36:44.099 +00:00 [WARN] (cssharp:AdminManager) Admin data file not found. Skipping admin data load.
+2024-05-29 06:36:44.101 +00:00 [INFO] (cssharp:Core) Loading Admin Groups from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_groups.json
+2024-05-29 06:36:44.105 +00:00 [INFO] (cssharp:Core) Loading Admin Command Overrides from C:\cs2\game\csgo\addons\counterstrikesharp\configs\admin_overrides.json
+2024-05-29 06:36:44.518 +00:00 [INFO] (cssharp:PluginContext) Loading plugin CS2-SimpleAdmin
+2024-05-29 06:36:44.948 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin CS2-SimpleAdmin (RELEASE)
+2024-05-29 06:36:45.078 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store
+2024-05-29 06:36:45.120 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store
+2024-05-29 06:36:45.251 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-roulette
+2024-05-29 06:36:45.266 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin [Store Module] Roulette
+2024-05-29 06:36:45.302 +00:00 [INFO] (cssharp:PluginContext) Loading plugin cs2-store-testmodule
+2024-05-29 06:36:45.312 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin Store Module [Test]
+2024-05-29 06:36:45.484 +00:00 [INFO] (cssharp:PluginContext) Loading plugin WASDMenuAPI
+2024-05-29 06:36:45.493 +00:00 [INFO] (cssharp:PluginContext) Finished loading plugin WASDMenuAPI
+2024-05-29 06:36:46.031 +00:00 [INFO] (cssharp:PluginContext) Loading plugin ZombieSharp
+2024-05-29 06:36:46.056 +00:00 [EROR] (cssharp:PluginManager) Failed to load plugin from C:\cs2\game\csgo\addons\counterstrikesharp\plugins\ZombieSharp\ZombieSharp.dll
+System.ArgumentException: Method CEntityIdentity_SetEntityName not found in gamedata.json
+   at CounterStrikeSharp.API.Core.GameData.GetSignature(String key) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/GameData.cs:line 94
+   at ZombieSharp.ZombieSharp.VirtualFunctionsInitialize() in C:\Github\cs2-ZombieMod\ZombieSharp\VirtualFunctions.cs:line 35
+   at ZombieSharp.ZombieSharp.Load(Boolean HotReload) in C:\Github\cs2-ZombieMod\ZombieSharp\ZombieSharp.cs:line 45
+   at CounterStrikeSharp.API.Core.Plugin.PluginContext.Load(Boolean hotReload) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/PluginContext.cs:line 218
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.LoadPlugin(String path) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 125
+   at CounterStrikeSharp.API.Core.Plugin.Host.PluginManager.Load() in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Plugin/Host/PluginManager.cs:line 93
+2024-05-29 06:37:23.119 +00:00 [INFO] (cssharp:AdminManager) Loaded admin data with 0 admins.
+2024-05-29 06:37:32.665 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:37:38.622 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:38:12.649 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:41:53.183 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'id')
+   at CounterStrikeSharp.API.Modules.Entities.SteamID..ctor(UInt64 id) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Modules/Entities/SteamID.cs:line 13
+   at CounterStrikeSharp.API.Modules.Entities.SteamID.op_Explicit(UInt64 u) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Modules/Entities/SteamID.cs:line 19
+   at CounterStrikeSharp.API.Core.Translations.PlayerLanguageExtensions.GetLanguage(CCSPlayerController player) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/Translations/PlayerLanguageExtensions.cs:line 15
+   at Store_Roulette.Store_Roulette.PrintToChatAll(String message, Object[] args) in C:\Github\cs2-store\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 319
+   at Store_Roulette.Store_Roulette.GiveCreditsToWinner(Color color) in C:\Github\cs2-store\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 240
+   at Store_Roulette.Store_Roulette.OnRoundEnd(EventRoundEnd event, GameEventInfo info) in C:\Github\cs2-store\Store_Modules\Store_Roulette\cs2-store-roulette.cs:line 217
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 06:41:53.252 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:21:01.225 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ZombieSharp.ZombieSharp.RespawnTogglerSetup() in C:\Github\cs2-ZombieMod\ZombieSharp\RespawnModule.cs:line 21
+   at ZombieSharp.ZombieSharp.OnRoundStart(EventRoundStart event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 136
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:21:13.810 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Collections.Generic.KeyNotFoundException: The given key '11' was not present in the dictionary.
+   at ZombieSharp.ZombieSharp.HumanizeClient(CCSPlayerController client, Boolean force)
+   at ZombieSharp.ZombieSharp.<>c__DisplayClass34_0.<OnPlayerSpawn>b__0() in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 354
+   at InvokeStub_Action.Invoke(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:21:13.818 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Collections.Generic.KeyNotFoundException: The given key '11' was not present in the dictionary.
+   at ZombieSharp.ZombieSharp.HumanizeClient(CCSPlayerController client, Boolean force)
+   at ZombieSharp.ZombieSharp.<>c__DisplayClass34_0.<OnPlayerSpawn>b__0() in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 354
+   at InvokeStub_Action.Invoke(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:21:14.626 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:22:29.891 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at InvokeStub_GameEventHandler`1.Invoke(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:25:23.481 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 13:55:31.332 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100
+2024-05-29 14:01:31.714 +00:00 [EROR] (cssharp:Core) Error invoking callback
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 480
+   at ZombieSharp.ZombieSharp.GetPlayerSettings(String steamid) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 24
+   at ZombieSharp.ZombieSharp.PlayerSettingsAuthorized(CCSPlayerController client) in C:\Github\cs2-ZombieMod\ZombieSharp\PlayerSettings.cs:line 55
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at ZombieSharp.ZombieSharp.OnPlayerConnectFull(EventPlayerConnectFull event, GameEventInfo info) in C:\Github\cs2-ZombieMod\ZombieSharp\EventModule.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at CounterStrikeSharp.API.Core.FunctionReference.<CreateWrappedCallback>b__18_0(fxScriptContext* context) in /home/runner/work/CounterStrikeSharp/CounterStrikeSharp/managed/CounterStrikeSharp.API/Core/FunctionReference.cs:line 100

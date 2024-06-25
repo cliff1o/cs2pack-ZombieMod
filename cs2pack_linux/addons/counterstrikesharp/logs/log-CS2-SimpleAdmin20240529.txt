@@ -1,0 +1,12 @@
+2024-05-29 06:28:19.642 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Plugin is up to date
+2024-05-29 06:28:19.720 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "001_CreateTables" successfully applied.
+2024-05-29 06:28:19.818 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "002_CreateFlagsTable" successfully applied.
+2024-05-29 06:28:20.141 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "003_ChangeColumnsPosition" successfully applied.
+2024-05-29 06:28:20.170 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "004_MoveOldFlagsToFlagsTable" successfully applied.
+2024-05-29 06:28:20.879 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "005_CreateUnbansTable" successfully applied.
+2024-05-29 06:28:21.455 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "006_ServerGroupsFeature" successfully applied.
+2024-05-29 06:28:21.607 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "007_ServerGroupsGlobal" successfully applied.
+2024-05-29 06:28:21.649 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Migration "008_OnlineTimeInPenalties" successfully applied.
+2024-05-29 06:30:36.247 +00:00 [FATL] plugin:CS2-SimpleAdmin (RELEASE) Unable to create or get server_idDuplicate entry '20.93.33.53:27015' for key 'sa_servers.address'
+2024-05-29 06:35:29.817 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Plugin is up to date
+2024-05-29 06:36:45.181 +00:00 [INFO] plugin:CS2-SimpleAdmin (RELEASE) Plugin is up to date
